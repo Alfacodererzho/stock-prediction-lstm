@@ -66,4 +66,31 @@
 
 ---
 
+## 🔍 Project Details
+
+This project leverages the power of Long Short-Term Memory (LSTM) networks, a type of recurrent neural network (RNN) well-suited for time-series data. By training on historical stock price data, the model learns temporal dependencies and patterns that can be used to predict future stock movements. Below are the main steps involved:
+
+1. **Data Collection & Preprocessing**:
+    - Historical stock prices are collected and processed to ensure the data is clean and properly scaled.
+    - Features are normalized to improve training efficiency.
+    - Data sequences are created to train the LSTM on temporal patterns.
+
+2. **Model Design**:
+    - The LSTM architecture is designed to handle sequential data effectively.
+    - Hyperparameters such as the number of layers, neurons, and activation functions can be customized in `model.py`.
+
+3. **Training**:
+    - The model is trained using `train.py` with preprocessed data.
+    - Training involves optimizing the loss function using a backpropagation-through-time (BPTT) algorithm.
+    - Checkpoints and logs are saved for evaluation and fine-tuning.
+
+4. **Prediction**:
+    - After training, the model can predict future stock prices based on new or test data.
+    - Predicted results can be visualized or compared against actual prices for accuracy assessment.
+
+5. **Customization**:
+    - Users can adapt the project to include additional features such as sentiment analysis or technical indicators to improve prediction accuracy.
+
+---
+
 🌟 *Happy Predicting!*
